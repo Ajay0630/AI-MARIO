@@ -1,0 +1,13 @@
+.instr-img{
+    display: inline-block;
+    width: 45%;
+}
+.modal-dialog{
+    width: 90%;
+}
+video{
+    background-image: url('game_console.png');
+    background-size: contain;
+    background-position: center;
+    padding: 40px;
+}

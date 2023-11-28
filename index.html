@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>AI Mario Game</title>
+    <script src="lib/p5.min.js" type="text/javascript"></script>
+    <script src="lib/p5.play.js" type="text/javascript"></script>
+    <script src="lib/p5.dom.js" type="text/javascript"></script>
+    <script src="scripts/sprites.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+    <script src="characters_environment.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body background="background.jpg">
+    <center>
+      <div class="btn btn-info" style="width: 100%">
+        <h1 id="header" class="btn btn-info" style="font-family: 'Inter', sans-serif; font-size: 40px; text-align: left; float: left;">AI MARIO GAME</h1>
+        <button id="instrucciones" class="btn btn-outline-primary" style="font-family: 'Inter', sans-serif; font-size: 40px; width: 10%; float: right;" data-bs-toggle="modal" data-bs-target="#myModal"><b>Instructions</b></button>
+      </div>
+      <img src="mario.jpg" width="100%">
+      <br><hr>
+      <button class="btn btn-info btn-lg" onclick="startGame()">Start Game</button>
+      <br><br>
+      <label class="btn btn-primary"><b id="status"></b></label>
+      <hr>
+      <div id="canvas"></div>
+      <div id="gameConsole"></div>
+      <h4 style="background: #f5f5f5; line-height: 2; margin: 0px;">Source Code: <a href="https://github.com/linuk">Linuk</a> Credit: Mario</h4>
+      <!--#myModal-->
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <!--Modal Header-->
+            <div class="modal-header">
+              <h4 class="modal-title">Instructions</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" style="float: left;">&times;</button>
+            </div>
+            <!--Modal Body-->
+            <div class="modal-body">
+              <img src="right.png" class="instr-img">
+              <img src="left.png" class="instr-img">
+              <img src="jump.png" class="instr-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+  </body>
+</html>
